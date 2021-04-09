@@ -9,19 +9,14 @@ using System.Threading.Tasks;
 
 namespace CrudCSharp.Classes
 {
-    public class Usuario
+    public class Usuario:Connection
     {
 
         SqlConnection con = null;
         SqlCommand cmd = null;
 
-
-        //adicionando a variavel con a função nativa sql conecction
-
-
         private string iuser;
         public string User
-
 
         {
             get { return iuser; }

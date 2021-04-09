@@ -44,5 +44,10 @@ namespace CrudCSharp
 
 
         }
+
+        private void CadastroUsuarios_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

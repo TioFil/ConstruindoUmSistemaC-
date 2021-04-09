@@ -27,7 +27,6 @@ namespace CrudCSharp
         private void Login_Load(object sender, EventArgs e)
         {
             Usuario usuario = new Usuario();
-
             txt_Senha.Text = Convert.ToString(usuario.Senha);
             txt_User.Text = Convert.ToString(usuario.User);
 
@@ -60,9 +59,10 @@ namespace CrudCSharp
                         else
                         {
                             txt_User.Text = txt_User.Text = "";
-                            MessageBox.Show("Insira uma senha válida");
+                            MessageBox.Show("Nome de Usuário Incorreto !!!");
                         }
                         
+                      
                         {
 
                         }

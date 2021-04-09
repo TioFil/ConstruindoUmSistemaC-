@@ -27,7 +27,7 @@ namespace CrudCSharp.Classes
             try
             {
                 // Obtemos os dados da conexão existentes no WebConfig utilizando o ConfigurationManager
-                string dadosConexao = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+                string dadosConexao = ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
                 // Instanciando o objeto SqlConnection
                 sqlconnection = new SqlConnection(dadosConexao);
                 //Verifica se a conexão esta fechada.

@@ -59,7 +59,7 @@ namespace CrudCSharp
             // usuáriosToolStripMenuItem
             // 
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
             // 
@@ -68,7 +68,7 @@ namespace CrudCSharp
             this.LabelUsuario.AutoSize = true;
             this.LabelUsuario.BackColor = System.Drawing.Color.Red;
             this.LabelUsuario.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.LabelUsuario.Location = new System.Drawing.Point(566, 382);
+            this.LabelUsuario.Location = new System.Drawing.Point(403, 0);
             this.LabelUsuario.MinimumSize = new System.Drawing.Size(200, 50);
             this.LabelUsuario.Name = "LabelUsuario";
             this.LabelUsuario.Size = new System.Drawing.Size(200, 50);
@@ -80,7 +80,7 @@ namespace CrudCSharp
             this.label1.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Snap ITC", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(288, 354);
+            this.label1.Location = new System.Drawing.Point(175, 182);
             this.label1.MinimumSize = new System.Drawing.Size(200, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(218, 88);

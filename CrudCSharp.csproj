@@ -156,5 +156,8 @@
   <ItemGroup>
     <None Include="Imagens\Fundo2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ScriptBanco\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

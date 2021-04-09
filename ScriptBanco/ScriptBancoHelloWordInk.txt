@@ -1,0 +1,53 @@
+
+
+USE [HelloWord]
+GO
+CREATE TABLE [dbo].[Usuario](
+[User_Id][int]NOT NULL,
+[user][varchar](50)NOT NULL,
+[senha][int]NOT NULL,
+[codigo_setor[int] NOT NULL,
+[email_interno][varchar]NOT NULL,
+[cargo][varchar]NOT NULL,
+
+CONSTRAINT [PK__Usuário__582517A17F60ED59] PRIMARY KEY CLUSTERED
+(
+[User_ID] ASC
+)
+) ON[PRIMARY]
+GO
+
+
+USE[HelloWord]
+GO
+CREATE TABLE [dbo].[Setor](
+[Setor_Id][int] NOT NULL,
+[nome_setor][varchar] NOT NULL,
+[descricao][varchar]NOT NULL
+[codigo][int]NOT NULL,
+[gerente][varchar] NOT NULL,
+[encarreado][varchar]NOT NULL,
+
+CONSTRAINT [PK__Setor__582517A17F60ED49] PDRIMARY KEY CLUSTERED
+(
+[User_ID] ASC
+)
+) ON[PRIMARY]
+GO
+
+
+CREATE PROCEDURE [dbo].[InserirUsuario]
+@iuser varchar(255),
+@senha int,
+@email_Interno(12,2),
+@codigo_setor int,
+@cargo varchar(255)
+AS
+INSERT INTO Usuarios VALUES (@iuser,@senha,@email_Interno,@codigo_setor,@carrgo)
+GO
+
+CREATE PROCEDURE [dbo] .[CarregarUsuario]
+AS
+Select * From Usuarios as U Join Setores  as  S On  U.codigo_setor = S.Codigo
+Order By User_Id asc 
+GO
